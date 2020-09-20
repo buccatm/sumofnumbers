@@ -18,5 +18,19 @@ function whileLoop(list) {
   return sum;
 }
 
+function recursive(list) {
+  const temp = [...list];
+  if (temp.length === 0) {
+    return 0;
+  }
+  return temp[0] + recursive(temp.splice(1));
+}
+
+function underscore(list) {
+  return _.reduce(list, (temp, total) => temp + total, 0);
+}
+
 console.log(forLoop(data));
 console.log(whileLoop(data));
+console.log(recursive(data));
+console.log(underscore(data));
