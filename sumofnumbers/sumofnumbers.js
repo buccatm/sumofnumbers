@@ -1,4 +1,4 @@
-const data = [1, 2, 3, 4, 5];
+const data = [1, 2, 3, 4, 5, 7, 8, 9, 10];
 
 function forLoop(list) {
   let sum = 0;
